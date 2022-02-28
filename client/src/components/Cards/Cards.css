@@ -1,0 +1,6 @@
+.card-container{
+    transition: ease-in-out 0.2s;
+}
+.card-container:hover{
+    box-shadow: 4px 2px 7px #000;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "meposter",
+  "version": "1.0.0",
+  "description": "simple social media application",
+  "main": "app.js",
+  "scripts": {
+    "test": "",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rofson17/meposter.git"
+  },
+  "keywords": [
+    "meposter"
+  ],
+  "author": "Rofson Jame Abu Siam",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.2",
+    "nodemailer": "^6.7.2"
+  }
+}

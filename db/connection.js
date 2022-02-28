@@ -1,0 +1,11 @@
+"use strict";
+const mongoose = require("mongoose");
+
+const DB = process.env.DATABASE;
+
+mongoose.connect(DB, {
+    useNewUrlParser: true,
+    // useCreateIndex: true,
+    useUnifiedTopology: true,
+    // useFindAndModify: false
+}).then(() => console.log("Databse connection successfully")).catch(err => console.log(`DATABASE CONNECTION ERROR: ${err}`));
